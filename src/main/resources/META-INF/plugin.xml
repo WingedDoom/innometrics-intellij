@@ -1,10 +1,10 @@
 <idea-plugin>
-    <id>com.innometrics.intellij-tracker-plugin.intellij-tracker-plugin</id>
-    <name>Innometrics IntelliJ tracker</name>
-    <vendor email="b.khabirov@innopolis.ru" url="https://t.me/khabiroff">Bulat Khabirov, Innopolis University</vendor>
+    <id>com.innometrics.innometrics-intellij-plugin.innometrics-intellij-plugin</id>
+    <name>Innometrics</name>
+    <vendor email="b.khabirov@innopolis.ru" url="htpps://t.me/khabiroff">Bulat Khabirov, Innopolis University</vendor>
 
     <description><![CDATA[
-    Innometrics tracker plugin for Intellij.<br>
+    Innometrics tracker plugin for IntelliJ platform IDEs<br>
     ]]></description>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html

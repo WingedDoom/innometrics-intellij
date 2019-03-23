@@ -1,2 +1,4 @@
-rootProject.name = 'intellij-tracker-plugin'
+rootProject.name = 'innometrics-intellij-plugin'
 
+include ':innometrics-java-core'
+project(':innometrics-java-core').projectDir = new File(settingsDir, './intellij-tracker-plugin/innometrics-java-core')
