@@ -19,9 +19,12 @@ dependencies {
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
     version '2019.1'
+    plugins {
+        
+    }
 }
 patchPluginXml {
     changeNotes """
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>"""
+      Initial release.<br>
+      """
 }
