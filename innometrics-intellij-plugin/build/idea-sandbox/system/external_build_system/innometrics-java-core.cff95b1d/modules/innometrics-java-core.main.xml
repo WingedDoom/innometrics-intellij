@@ -1,0 +1,21 @@
+<module>
+  <component name="DeprecatedModuleOptionManager">
+    <option key="type" value="JAVA_MODULE" />
+  </component>
+  <component name="ExternalSystem" externalSystem="GRADLE" externalSystemModuleGroup="com.innometrics.innometricsjavacore" externalSystemModuleType="sourceSet" externalSystemModuleVersion="1.0-SNAPSHOT" linkedProjectId="innometrics-java-core:main" linkedProjectPath="$MODULE_DIR$/../.." rootProjectPath="$MODULE_DIR$/../.." />
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../build/classes/java/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: com.squareup.retrofit2:converter-gson:2.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.retrofit2:retrofit:2.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.8.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp:3.12.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.15.0" level="project" />
+  </component>
+</module>

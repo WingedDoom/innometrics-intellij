@@ -1,0 +1,8 @@
+<project>
+  <component name="ExternalCompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="innometrics-java-core.main" target="1.8" />
+      <module name="innometrics-java-core.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
