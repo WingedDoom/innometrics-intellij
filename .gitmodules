@@ -1,0 +1,3 @@
+[submodule "innometrics-java-core"]
+	path = innometrics-java-core
+	url = https://github.com/WingedDoom/innometrics-java-core
