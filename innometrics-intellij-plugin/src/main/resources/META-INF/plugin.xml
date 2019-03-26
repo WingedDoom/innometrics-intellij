@@ -13,14 +13,16 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
+        <applicationService serviceInterface="services.TokenStorageService"
+                            serviceImplementation="services.impl.TokenStorageServiceImpl"/>
+        <applicationService serviceInterface="services.ActivitiesStorageService"
+                            serviceImplementation="services.impl.ActivitiesStorageServiceImpl"/>
     </extensions>
 
     <actions>
         <!-- Add your actions here -->
-        <action id="Innometrics.ToolsMenuItem"
-                class="ToolsMenuAction"
-                text="Innometrics Plugin" description="Innometrics plugin tools menu item">
+        <group id="TestActionGroup" class="actions.InnometricsToolsActionGroup" text="Innometrics" description="A group containing Innometrics plugin actions" popup="true">
             <add-to-group group-id="ToolsMenu" anchor="last"/>
-        </action>
+        </group>
     </actions>
 </idea-plugin>
