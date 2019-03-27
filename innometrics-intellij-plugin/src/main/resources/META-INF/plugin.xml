@@ -17,6 +17,8 @@
                             serviceImplementation="services.impl.TokenStorageServiceImpl"/>
         <applicationService serviceInterface="services.ActivitiesStorageService"
                             serviceImplementation="services.impl.ActivitiesStorageServiceImpl"/>
+        <applicationService serviceInterface="services.InnometricsCoreService"
+                            serviceImplementation="services.impl.InnometricsCoreServiceImpl"/>
     </extensions>
 
     <actions>
