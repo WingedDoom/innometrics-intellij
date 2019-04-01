@@ -18,6 +18,7 @@ public class InnometricsLoginAction extends AnAction {
     @Override
     public void actionPerformed(@NotNull AnActionEvent e) {
         // present login dialog
+        new AuthDialogWrapper().showAndGet();
 //        Project project = e.getData(PlatformDataKeys.PROJECT);
 //
 //        String innometricsLogin = "b.khabirov@innopolis.ru";
@@ -44,5 +45,9 @@ public class InnometricsLoginAction extends AnAction {
 //                //ServiceManager.getService(ActivitiesSenderService.class).sendMeasurements();
 //            }
 //        }
+    }
+
+    private void showAuthWindow() {
+
     }
 }
