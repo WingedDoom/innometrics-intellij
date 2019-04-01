@@ -14,10 +14,15 @@ public class InnometricsCoreServiceImpl implements InnometricsCoreService {
     private InnometricsCoreRepository coreRepository;
 
     public InnometricsCoreServiceImpl() {
+        TokenStorageService tokenStorageService = ServiceManager.getService(TokenStorageService.class);
         coreRepository = new InnometricsCoreRepository(
-                ServiceManager.getService(TokenStorageService.class),
+                tokenStorageService,
                 ServiceManager.getService(ActivitiesStorageService.class)
         );
+
+        String baseURL = tokenStorageService.getBaseURL();
+        if (baseURL != null)
+            coreRepository.setBaseURL(baseURL);
     }
 
     @Override
@@ -38,10 +43,19 @@ public class InnometricsCoreServiceImpl implements InnometricsCoreService {
 
         coreRepository.setBaseURL(url);
         coreRepository.login(login, password);
+
+        TokenStorageService service = ServiceManager.getService(TokenStorageService.class);
+        if (url.equals(baseURL))
+            // custom url was used
+            service.setBaseURL(baseURL);
+        else
+            // default url was used
+            service.setBaseURL(null);
     }
 
     @Override
     public void logout() {
-
+        ServiceManager.getService(TokenStorageService.class).setBaseURL(null);
+        coreRepository.logout();
     }
 }
